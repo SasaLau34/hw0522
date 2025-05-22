@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>我喜欢的城市</title>
+</head>
+<body>
+    <h2>我喜欢的城市</h2>
+    <script>
+        let travels = ['胡志明', '巴厘岛', '苏州', '台南', '伦敦'];
+
+        document.write('<table border="1">');
+        for (let i = 0; i < travels.length; i++) {
+            document.write('<tr><td>城市' + (i + 1) + '</td>');
+            document.write('<td>' + travels[i] + '</td></tr>');
+        }
+        document.write('</table>');
+    </script>
+</body>
+</html>

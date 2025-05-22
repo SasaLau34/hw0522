@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>成绩列表</title>
+</head>
+<body>
+    <script>
+        // 建立资料
+        let grades = [70, 50, 84];
+        grades.push(35);
+        grades.push(100);
+        console.log(grades.length);
+
+        // 取得资料，利用 for 循环
+        for (let i = 0; i < grades.length; i++) {
+            document.write('成绩 ' + (i + 1) + ': ' + grades[i] + '<br>');
+        }
+    </script>
+</body>
+</html>
