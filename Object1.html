@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>物件示例</title>
+</head>
+<body>
+    <script>
+        // 建立物件
+        let man = new Object();
+        man.age = 24;
+        man.name = "Karry";
+        man.talk = function () {
+            // 使用 this
+            console.log("Hello 我是 " + this.name + "，年龄 " + this.age);
+        };
+
+        // 使用物件
+        document.write("Hello 我是 " + man.name);
+
+        man.talk();
+    </script>
+</body>
+</html>
