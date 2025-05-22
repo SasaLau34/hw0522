@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>成绩列表</title>
+</head>
+<body>
+    <script>
+        // 建立资料
+        let grades = [70, 50, 84];
+        grades.push(35);
+        grades.push(100);
+
+        // 计算总和
+        let sum = 0;
+        for (let i = 0; i < grades.length; i++) {
+            document.write('成绩 ' + (i + 1) + ': ' + grades[i] + '<br>');
+            sum += grades[i];
+        }
+
+        // 计算平均数
+        let average = sum / grades.length;
+
+        // 显示总和与平均数
+        document.write('<hr>');
+        document.write('总和: ' + sum + '<br>');
+        document.write('平均数: ' + average.toFixed(2)); 
+    </script>
+</body>
+</html>
